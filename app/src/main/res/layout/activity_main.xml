@@ -1,0 +1,62 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FAF3E0"
+    android:padding="16dp">
+
+    <!-- Tampilan untuk Hasil -->
+    <TextView
+        android:id="@+id/tvDisplay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:textSize="32sp"
+        android:background="#C8B6A6"
+        android:textColor="#2C302E"
+        android:padding="16dp"
+        android:text="0"
+        android:textStyle="bold" />
+
+    <!-- Grid Layout untuk Tombol Angka dan Operasi -->
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:columnCount="4"
+        android:rowCount="5"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp">
+
+        <!-- Tombol 7, 8, 9, Backspace -->
+        <Button android:id="@+id/btn7" style="@style/CalculatorButton" android:text="7"/>
+        <Button android:id="@+id/btn8" style="@style/CalculatorButton" android:text="8"/>
+        <Button android:id="@+id/btn9" style="@style/CalculatorButton" android:text="9"/>
+        <Button android:id="@+id/btnBackspace" style="@style/CalculatorButton" android:text="⌫"/>
+
+        <!-- Tombol 4, 5, 6, Tambah (+) -->
+        <Button android:id="@+id/btn4" style="@style/CalculatorButton" android:text="4"/>
+        <Button android:id="@+id/btn5" style="@style/CalculatorButton" android:text="5"/>
+        <Button android:id="@+id/btn6" style="@style/CalculatorButton" android:text="6"/>
+        <Button android:id="@+id/btnAdd" style="@style/CalculatorButton" android:text="+"/>
+
+        <!-- Tombol 1, 2, 3, Kurang (-) -->
+        <Button android:id="@+id/btn1" style="@style/CalculatorButton" android:text="1"/>
+        <Button android:id="@+id/btn2" style="@style/CalculatorButton" android:text="2"/>
+        <Button android:id="@+id/btn3" style="@style/CalculatorButton" android:text="3"/>
+        <Button android:id="@+id/btnSubtract" style="@style/CalculatorButton" android:text="-"/>
+
+        <!-- Tombol 0, Koma, Persen, Kali (*) -->
+        <Button android:id="@+id/btn0" style="@style/CalculatorButton" android:text="0"/>
+        <Button android:id="@+id/btnComma" style="@style/CalculatorButton" android:text=","/>
+        <Button android:id="@+id/btnPercent" style="@style/CalculatorButton" android:text="%"/>
+        <Button android:id="@+id/btnMultiply" style="@style/CalculatorButton" android:text="×"/>
+
+        <!-- Tombol Clear, Sama Dengan, Bagi (/) -->
+        <Button android:id="@+id/btnClear" style="@style/CalculatorButton" android:layout_columnSpan="2" android:text="C"/>
+        <Button android:id="@+id/btnEquals" style="@style/CalculatorButton" android:text="="/>
+        <Button android:id="@+id/btnDivide" style="@style/CalculatorButton" android:text="÷"/>
+
+    </GridLayout>
+</LinearLayout>

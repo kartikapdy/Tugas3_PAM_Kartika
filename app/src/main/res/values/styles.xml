@@ -1,0 +1,21 @@
+<resources>
+    <!-- Tema aplikasi -->
+    <style name="Theme.CalculatorApp" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">#8C7B75</item>
+        <item name="colorPrimaryDark">#5D4037</item>
+        <item name="colorAccent">#A0896B</item>
+    </style>
+
+    <!-- Style untuk tombol kalkulator -->
+    <style name="CalculatorButton">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_columnWeight">1</item>
+        <item name="android:layout_rowWeight">1</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:background">#C8B6A6</item>
+        <item name="android:textColor">#2C302E</item>
+        <item name="android:layout_margin">5dp</item>
+        <item name="android:padding">16dp</item>
+    </style>
+</resources>
